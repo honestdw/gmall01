@@ -1,0 +1,75 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version":2,
+	"minimum_chrome_version": "31",
+	"name":"Separate Window",
+    "short_name":"Sepwin",
+    "version":"0.6.2",
+    "offline_enabled":false,
+	"description":"__MSG_extDesc__",
+	"author":"Belousov Alexandr",
+	"default_locale":"en",
+    "icons":{
+        "16":"img/icon16.png",
+        "48":"img/icon48.png",
+        "128":"img/icon128.png"
+    },
+    "permissions":[
+        "tabs","storage","bookmarks","<all_urls>"
+    ],
+    "background":{
+        "scripts":["js/storage.js","js/background.js"]
+    },
+    "content_scripts":[{
+        "matches":[
+            "http://*/*",
+            "https://*/*"
+        ],
+		"all_frames": false,
+        "run_at":"document_start",
+        "css":["css/icon.css"],
+        "js":[
+            "js/common.js",
+            "js/communication.js",
+            "js/icon.js",
+            "js/mainApp.js",
+			"js/elements.js",
+            "js/newWindow.js",
+            "js/player.js"
+			]
+    }],
+    "web_accessible_resources": [
+		"css/preview.css",
+        "css/window.css",
+        "css/video.css",
+        "img/top.png",
+        "img/back.png",
+        "img/btn_up.png",
+        "img/btn_dwn.png",
+        "img/icon.svg",
+        "img/volume.png",
+        "img/volume_off.png",
+        "img/fullscr_on.png",
+        "img/fullscr_off.png",
+        "img/camera.png",
+        "img/bookmark_on.png",
+        "img/bookmark_off.png",
+        "img/link.png",
+        "img/filters_ico.png",
+        "img/rotate.png",
+        "img/zoom.png",
+        "img/saturate.png",
+        "img/brightness.png",
+        "img/contrast.png",
+        "img/blur.png",
+        "img/reset.png",
+        "img/position.png",
+        "img/speed.svg"
+    ],
+    "browser_action":{
+        "default_title":"Choose to separate window",
+        "default_icon":"img/icon128.png",
+        "default_popup":"popup.html"
+    }
+}

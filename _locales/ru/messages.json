@@ -1,0 +1,56 @@
+{
+	"extDesc":{
+		"message":"Выделите произвольную область страницы в отдельное всплывающее окно"
+	},
+	"txtButtonChooseStart":{
+		"description":"Кнопка выделить",
+		"message":"Выбрать"
+	},
+	"txtButtonChooseCancel":{
+		"description":"Кнопка выделить",
+		"message":"Отменить"
+	},
+	"popSwitchOff":{
+		"description":"Переключатель режима",
+		"message":"Только окно"
+	},
+	"popSwitchOn":{
+		"message":"Окно и вкладка"
+	},
+	"showIcon":{
+		"message":"Показывать иконку"
+	},
+	"delete":{
+		"message":"Удалить"
+	},
+	"titleIcon":{
+		"message":"Выделить в окно"
+	},
+	"historyTxt":{
+		"message":"Предыдущий выбор"
+	},
+	"error":{
+		"message":"Обновите вкладку"
+	},
+	"PanelBack":{
+		"message":"Назад на главное окно"
+	},
+	"PanelScrollUp":{
+		"message":"Вверх на следующий элемент"
+	},
+	"PanelScrollDown":{
+		"message":"Назад на предыдующий элемент"
+	},
+	"PanelPrintScreen":{
+		"message":"Скриншот"
+	},
+	"PanelBookMarks":{
+		"message":"Добавить в закладки"
+	},
+	"PanelGetLink":{
+		"message":"Получить ссылку"
+	},
+	"folderBookMarks":{
+		"message":"Отдельные окна"
+	}
+}

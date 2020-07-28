@@ -1,0 +1,210 @@
+HTML{
+	width: 100% !important;
+	height: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	top:0 !important;
+	left:0 !important;
+	min-width: 100% !important;
+	min-height: 100% !important;
+	max-width: 100% !important;
+	max-height:100% !important;
+	overflow: hidden !important;
+}
+.__sepWin,
+.__sepWin *{
+	all: initial;
+}
+#__btn_panel{
+	width: 25px;
+	height: 25px;
+	background-color: rgba(0,128,254,0);
+	border-bottom-left-radius: 3px;
+	position: fixed;
+	right: 0;
+	top:0;
+	display: block;
+	transition: width 0.3s 0.1s ease, height 0.15s 0.1s ease,opacity 0.3s 0.1s ease;
+	opacity: 0.1;
+	overflow: hidden;
+	z-index:2147483647 !important;
+}
+#__btn_panel:hover{
+	background-color: rgba(0,128,254,.55);
+	width: 30px;
+	height: 168px;
+	opacity: 1;
+}
+#__btn_panel:hover button{
+	display: block;
+}
+#__btn_back{
+	background: url('chrome-extension://__MSG_@@extension_id__/img/back.png') 0;
+}
+#__btn_up{
+	background: url('chrome-extension://__MSG_@@extension_id__/img/btn_up.png') 0;	
+}
+#__btn_dwn{
+	background: url('chrome-extension://__MSG_@@extension_id__/img/btn_dwn.png') 0;	
+}
+#__btn_prsc{
+	background: url('chrome-extension://__MSG_@@extension_id__/img/camera.png') 0;		
+}
+#__btn_link{
+	background: url('chrome-extension://__MSG_@@extension_id__/img/link.png') 0;		
+}
+#__btn_back:hover,#__btn_up:hover,
+#__btn_dwn:hover,#__btn_prsc:hover,
+#__btn_bkm:hover,#__btn_link:hover{
+	opacity: 1;
+	background-color: initial;
+}
+#__btn_up.disable:hover,#__btn_dwn.disable:hover{
+	opacity: .3;
+}
+#__btn_back,#__btn_up,
+#__btn_dwn,#__btn_prsc,
+#__btn_bkm,#__btn_link{
+	width:26px;
+	height: 26px;
+	margin: 2px;
+	display: none;
+	opacity: .3;
+	border:none;
+	cursor: pointer;
+}
+.btn_bkm_on{
+	background: url('chrome-extension://__MSG_@@extension_id__/img/bookmark_on.png') 0;
+}
+.btn_bkm_off{
+	background: url('chrome-extension://__MSG_@@extension_id__/img/bookmark_off.png') 0;
+}
+#__win_link_overlay{
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	position: absolute;
+	z-index:2147483640 !important;
+	background-color: rgba(55,58,71,0.7);
+	animation: win_link_open 0.3s 1 ease-in-out;
+}
+#__win_link{
+	height: 150px;
+	width: 350px;
+	display: block;
+	z-index:2147483647 !important;
+	position: fixed;
+	top:10px;
+	left:0;
+	right: 0;
+	margin: 5% auto;
+	padding:10px; 
+	border-radius: 5px;
+	background: linear-gradient(to bottom right,rgba(170,230,255,1),rgba(50,145,175,1));
+    box-shadow:2px 2px 3px rgba(000,000,000,0.5),inset 0 0 2px rgba(255,255,255,0.7);
+}
+#__win_link DIV{
+	width: 100%;
+	height: 70%;
+	display: block;
+	margin: 5px auto;
+}
+#__win_link DIV TEXTAREA{
+	width: 98%;
+	height: 98%;
+	word-break: break-all;
+	background-color: white;
+	font-size: 12px;
+	padding: 1%;
+	border: 1px solid #00557d;
+}
+#__win_link BUTTON{
+	width: 50px;
+	height: 18px;
+	margin: 15px auto;
+	left:0;
+	right: 0;
+	display: block;
+	text-align: center;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: 1px solid #00557d;
+    color: #ffffff;
+    background: linear-gradient(to bottom right,#19b6ff,#0083ab);
+    box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 2px rgba(255,255,255,0.7);
+}
+#__win_link BUTTON:hover{
+	cursor: pointer;
+	background: linear-gradient(to bottom right,#007DB7,#0083ab);
+}
+
+.__hidden{
+	display: none !important;
+	visibility: hidden !important;
+	z-index:-1 !important;
+	position: static !important;
+	max-width: 0 !important;
+	max-height: 0 !important;
+}
+.__parent,.__target{
+	top:0 !important;
+	left:0 !important;
+	clear: none !important;
+	clip: auto !important;
+	margin: 0 !important;
+	width: 100% !important;
+	min-width: 100% !important;
+	min-height: 100% !important;
+	max-width: 100% !important;
+	max-height:100% !important;
+	border-width:0 !important;
+	/*transform: none !important;*/
+}
+.__parent{
+	overflow: hidden !important;
+	opacity: 1 !important;
+	padding: 0 !important;
+	height: 100%!important;
+	position: static!important;
+	display: block!important;
+	z-index:10!important;
+	transform: none !important;
+}
+.__target{
+	position: absolute!important;
+	z-index:2147483640!important;
+	height: 100%;
+	overflow: hidden!important;
+	animation: target_anim 0.5s 1 ease-in-out;
+}
+.__target>IFRAME, .__target>OBJECT, .__target>EMBED{
+	top:0 !important;
+	left:0 !important;
+	clear: none !important;
+	clip: auto !important;
+	min-width: 100% !important;
+	min-height: 100% !important;
+	width: 100% !important;
+	height: 100% !important;
+	visibility: visible !important;
+}
+.__onScroll{
+	overflow-y: auto!important;
+}
+@keyframes win_link_open{
+	from{
+		opacity: 0.5;
+		transform: scale3d(1.1,1.1,1.1);
+	}to{
+		opacity: 1;
+		transform: scale3d(1,1,1);
+	}
+}
+@keyframes target_anim{
+	from{
+		filter: blur(5px);
+	}to{
+		filter:blur(0px);
+	}
+}

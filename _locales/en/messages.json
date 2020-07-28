@@ -1,0 +1,54 @@
+{
+	"extDesc":{
+		"description":"Extension description",
+		"message":"Derive an arbitrary area of a page in a separate popup window"
+	},
+	"txtButtonChooseStart":{
+		"message":"&nbsp;&nbsp;Select"
+	},
+	"txtButtonChooseCancel":{
+		"message":"&nbsp;&nbsp;Cancel"
+	},
+	"popSwitchOff":{
+		"message":"Only popup window"
+	},
+	"popSwitchOn":{
+		"message":"Keep a tab open"
+	},
+	"showIcon":{
+		"message":"Show icon"
+	},
+	"delete":{
+		"message":"Delete"
+	},
+	"titleIcon":{
+		"message":"Put in a popup"
+	},
+	"historyTxt":{
+		"message":"Previous choice"
+	},
+	"error":{
+		"message":"Reload this page"
+	},
+	"PanelBack":{
+		"message":"Back to main window"
+	},
+	"PanelScrollUp":{
+		"message":"Up to next element"
+	},
+	"PanelScrollDown":{
+		"message":"Back to previous element"
+	},
+	"PanelPrintScreen":{
+		"message":"Screenshot"
+	},
+	"PanelBookMarks":{
+		"message":"Add to bookmarks"
+	},
+	"PanelGetLink":{
+		"message":"Get link"
+	},
+	"folderBookMarks":{
+		"message":"Separate windows"
+	}
+}
